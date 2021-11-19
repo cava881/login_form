@@ -1,0 +1,17 @@
+<?php
+if (isset($_COOKIE['brownie'])) {
+	echo 'Cookie is set, ';
+	
+	if ($_COOKIE['brownie'] == '1') {
+		echo 'congratulations! Here is a cat';
+		echo '<img src="https://icatcare.org/app/uploads/2018/07/Helping-your-new-cat-or-kitten-settle-in-1.png" width="100">';
+	}
+	
+	if ($_COOKIE['brownie'] == '2') {
+		echo 'you are logged in as administrator';
+	}
+}
+if (!isset($_COOKIE['brownie'])) {
+	echo 'Cookie is not set. No cat for you.';
+}
+?>
