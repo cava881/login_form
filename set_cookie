@@ -1,0 +1,3 @@
+<?php
+setcookie('brownie' , '1');
+?>
