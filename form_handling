@@ -1,0 +1,5 @@
+<?php
+	echo "Welcome! Your username is " . $_GET["username"] . ", your password is: " . $_GET["password"] . " and your email address is: " . $_GET['email'];
+	echo "<br>";
+	echo "Your sex is " . $_GET["sex"] . ", your age is " . $_GET["age"] . " years old and you agree " . $_GET["percent"] . "% with the imaginary terms and conditions.";
+?>
