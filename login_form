@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+	<meta charset= "UTF-8">
+	<title>Login form</title>
+	<style media="screen">
+		a{
+			text-decoration: none;
+			display: block;
+			background-color: blueviolet;
+			color: yellow;
+			border-radius: 10px;
+			margin: 8px;
+			padding: 10px;
+			font-size: large;
+			width: 80px;
+		}
+		a:hover{
+			background-color: darkred;
+
+		}
+		input{
+			display: block;
+			margin: 10px;
+		}
+	</style>
+</head>
+<body>
+	<h1>Login form</h1>
+	<form action="form_handling.php" method= "get">
+		<input type="text" name="username" placeholder="Enter your username">
+		<input type="password" name="password" placeholder="Enter your password">
+		<input type="email" name="email" placeholder="Enter your email" >
+		Male<input type="radio" name="sex" value="male" checked>
+		Female<input type="radio" name= "sex" value="female">
+		I agree<input type="checkbox" name="consent">
+		How much do you agree? <select class="" name="percent">
+			<?php
+				for ($i=0; $i<=100; $i++){
+					echo '<option value=" ' . $i . '">' . $i . '</option>';
+				}
+			?>
+		</select> %
+		<br>
+		Age group <select class="" name="age">
+			<option value="< 20">< 20</option>
+			<option value="20-30">20-30</option>
+			<option value="30-40">30-40</option>
+			<option value="> 40">> 40</option>
+		</select>
+		<input type="submit" name="" value="Submit">
+		<textarea maxlength="150" name="comments" rows="10" cols="15" placeholder="Please, write down your additional comments"></textarea>
+		
+	</form>
+	<a href="https://google.com">Google</a>
+	<a href="https://facebook.com">Facebook</a>
+	<img src="https://www.rspcasa.org.au/wp-content/uploads/2019/07/kittens-hanging-1-1003x1024.jpg" width="200">
+</body>
+</html>
